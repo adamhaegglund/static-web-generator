@@ -5,19 +5,18 @@ from pathlib import Path
 # Resolve paths relative to this file, not the current working directory
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 PATH_STATIC = PROJECT_ROOT / "static"
-PATH_PUBLIC = PROJECT_ROOT / "public"
+PATH_DOCS = PROJECT_ROOT / "docs"
 
 
 def get_static_files() -> None:
-    # Safety check: never delete anything outside the project
-    if PATH_PUBLIC.resolve().parent != PROJECT_ROOT:
-        raise ValueError(f"Refusing to delete {PATH_PUBLIC}: not inside {PROJECT_ROOT}")
+    if PATH_DOCS.resolve().parent != PROJECT_ROOT:
+        raise ValueError(f"Refusing to delete {PATH_DOCS}: not inside {PROJECT_ROOT}")
 
-    if PATH_PUBLIC.exists():
-        print(f"Removing {PATH_PUBLIC}")
-        shutil.rmtree(PATH_PUBLIC)
+    if PATH_DOCS.exists():
+        print(f"Removing {PATH_DOCS}")
+        shutil.rmtree(PATH_DOCS)
 
-    copy_files(PATH_STATIC, PATH_PUBLIC)
+    copy_files(PATH_STATIC, PATH_DOCS)
 
 
 def copy_files(static, public) -> None:
@@ -34,6 +33,12 @@ def copy_files(static, public) -> None:
             shutil.copy(from_path, to_path)
         else:
             copy_files(from_path, to_path)
+
+def generate_page(from_path, template_path, dest_path) -> None:
+    
+
+
+    print(f"Generating page from {from_path} to {dest_path} using {template_path}")
 
 
 if __name__ == "__main__":
