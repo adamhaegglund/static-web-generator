@@ -1,46 +1,43 @@
-# Tolkien Fan Club
+# Hello, World
 
-![JRR Tolkien sitting](/images/tolkien.png)
+![Abstract banner with a glowing terminal prompt](/images/hero.svg)
 
-Here's the deal, **I like Tolkien**.
+Welcome to my corner of the internet. I write about **code**, tools, and the things I build when I _should_ be sleeping.
 
-> "I am in fact a Hobbit in all but size."
+> "Any sufficiently advanced technology is indistinguishable from magic."
 >
-> -- J.R.R. Tolkien
+> -- Arthur C. Clarke
 
-## Blog posts
+## Latest posts
 
-- [Why Glorfindel is More Impressive than Legolas](/blog/glorfindel)
-- [Why Tom Bombadil Was a Mistake](/blog/tom)
-- [The Unparalleled Majesty of "The Lord of the Rings"](/blog/majesty)
+- [Building a Static Site Generator from Scratch](/blog/static-site-generator)
+- [My Terminal Setup in 2026](/blog/terminal-setup)
+- [Lessons from Shipping Side Projects](/blog/side-projects)
 
-## Reasons I like Tolkien
+## Things I'm into
 
-- You can spend years studying the legendarium and still not understand its depths
-- It can be enjoyed by children and adults alike
-- Disney _didn't ruin it_ (okay, but Amazon might have)
-- It created an entirely new genre of fantasy
+- Building tools that make other tools easier to build
+- Keyboard-driven workflows (the mouse is _optional_)
+- Reading other people's source code
+- Coffee, in quantities my doctor would not approve of
 
-## My favorite characters (in order)
+## Current stack
 
-1. Gandalf
-2. Bilbo
-3. Sam
-4. Glorfindel
-5. Galadriel
-6. Elrond
-7. Thorin
-8. Sauron
-9. Aragorn
+1. Python
+2. TypeScript
+3. Go
+4. Bash (reluctantly)
+5. Markdown, for everything else
 
-Here's what `elflang` looks like (the perfect coding language):
+Here's my favorite program:
 
 ```
-func main(){
-    fmt.Println("Aiya, Ambar!")
-}
+def main():
+    print("Hello, World!")
+if __name__ == "__main__":
+    main()
 ```
 
-Want to get in touch? [Contact me here](/contact).
+Want to get in touch? [Say hi here](/contact).
 
 This site was generated with a custom-built [static site generator](https://www.boot.dev/courses/build-static-site-generator-python) from the course on [Boot.dev](https://www.boot.dev).

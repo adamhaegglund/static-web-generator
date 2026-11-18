@@ -1,9 +1,9 @@
-# Contact the Author
+# Get in Touch
 
 [< Back Home](/)
 
-Give me a call anytime to chat about Tolkien!
+Got a question, an idea, or just want to talk shop? Drop me a message.
 
-`555-555-5555`
+`hello@example.com`
 
-**"Váya márië."**
+**Thanks for stopping by!**

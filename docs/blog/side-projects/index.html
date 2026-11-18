@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lessons from Shipping Side Projects</title>
+    <link href="/static-web-generator/index.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <article><div><h1>Lessons from Shipping Side Projects</h1><p><a href="/static-web-generator/">< Back Home</a></p><p><img src="/static-web-generator/images/launch.svg" alt="A rocket launching from a laptop"></img></p><blockquote>"Done is better than perfect."</blockquote><p>I have a graveyard of unfinished side projects. Half-built apps, abandoned repos, domains I'm still paying for. But a few of them actually shipped, and those taught me more than anything else.</p><p><i>Here's what I wish I'd known earlier.</i></p><h2>Start Smaller Than You Think</h2><p>Every project starts as a grand vision. The ones that ship are the ones that got cut down to something I could finish in a weekend:</p><ol><li><b>Pick one feature</b>: The one thing that makes the project worth existing.</li><li><b>Build only that</b>: Accounts, settings and dark mode can wait.</li><li><b>Ship it</b>: Put it somewhere people can see it, even if it's rough.</li></ol><h2>Choose Boring Technology</h2><h3>Novelty Is Expensive</h3><p>Learning a new framework is fun, but it's a separate project. If the goal is to ship, use the tools you already know:</p><ul><li><b>Fewer surprises</b>: You already know where the sharp edges are.</li><li><b>Faster debugging</b>: You recognize the error messages.</li><li><b>More momentum</b>: Progress you can see keeps you going.</li></ul><h2>Make It Easy to Deploy</h2><p>If deploying takes more than one command, you won't do it often. Automate it early:</p><pre><code>#!/bin/sh
+python3 src/main.py "/my-site/"
+git add docs
+git commit -m "publish"
+git push
+</code></pre><h2>Finish Things</h2><p>The hardest part isn't starting. It's the last 10%: the README, the bug you've been ignoring, the deploy. Push through it. A finished small thing beats an unfinished big thing every time.</p><p>Now go ship something.</p></div></article>
+  </body>
+</html>

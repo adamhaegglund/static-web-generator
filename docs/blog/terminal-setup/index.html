@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Terminal Setup in 2026</title>
+    <link href="/static-web-generator/index.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <article><div><h1>My Terminal Setup in 2026</h1><p><a href="/static-web-generator/">< Back Home</a></p><p><img src="/static-web-generator/images/terminal.svg" alt="A stylized terminal window"></img></p><blockquote>"The command line is the most powerful tool you're not using enough."</blockquote><p>I spend most of my day in a terminal, so I've spent an unreasonable amount of time tweaking it. Here's where it's landed, at least until next week.</p><h2>The Essentials</h2><h3>Shell</h3><p>I use <b>zsh</b> with a minimal prompt. No twelve-segment powerline with the weather and my stock portfolio. Just the directory, the git branch, and whether the last command failed.</p><h3>Tools I Can't Live Without</h3><ul><li><b>fzf</b>: Fuzzy-find anything. Files, history, git branches. It changes how you navigate.</li><li><b>ripgrep</b>: Search code absurdly fast. I don't remember the last time I typed <code>grep -r</code>.</li><li><b>tmux</b>: Sessions that survive closing the window. Splits for days.</li><li><b>git</b>: Obviously. But with a <i>lot</i> of aliases.</li></ul><h2>Favorite Aliases</h2><pre><code>alias gs="git status"
+alias gco="git checkout"
+alias ll="ls -lah"
+alias ..="cd .."
+alias serve="python3 -m http.server 8888"
+</code></pre><h2>Tips If You're Starting Out</h2><ol><li><b>Learn the history shortcuts</b>: <code>Ctrl+R</code> alone will save you hours.</li><li><b>Keep your dotfiles in git</b>: Future you, on a new laptop, will be grateful.</li><li><b>Add things slowly</b>: Only adopt a tool when you feel the pain it solves.</li><li><b>Read the man pages</b>: Seriously. They're better than you think.</li></ol><h2>Wrapping Up</h2><p>The best setup is the one you actually understand. Steal ideas freely, but make it yours.</p></div></article>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" role="img" aria-label="Markdown converted to HTML">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0f172a"/><stop offset="1" stop-color="#1e3a8a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="300" fill="url(#bg)"/>
+  <g font-family="Menlo, Consolas, monospace" font-size="22">
+    <rect x="60" y="60" width="240" height="180" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="85" y="105" fill="#38bdf8"># Title</text>
+    <text x="85" y="145" fill="#e2e8f0">**bold**</text>
+    <text x="85" y="185" fill="#e2e8f0">- item</text>
+    <text x="85" y="220" fill="#94a3b8">.md</text>
+    <path d="M340 150H450" stroke="#facc15" stroke-width="6" stroke-linecap="round"/>
+    <path d="M430 128L460 150L430 172" fill="none" stroke="#facc15" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="500" y="60" width="240" height="180" rx="14" fill="#1e293b" stroke="#f472b6" stroke-width="2"/>
+    <text x="525" y="105" fill="#f472b6">&lt;h1&gt;</text>
+    <text x="525" y="145" fill="#e2e8f0">&lt;b&gt;</text>
+    <text x="525" y="185" fill="#e2e8f0">&lt;li&gt;</text>
+    <text x="525" y="220" fill="#94a3b8">.html</text>
+  </g>
+</svg>

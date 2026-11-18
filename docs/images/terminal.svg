@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" role="img" aria-label="Terminal window">
+  <rect width="800" height="300" fill="#064e3b"/>
+  <rect x="120" y="40" width="560" height="220" rx="14" fill="#0b1120" stroke="#334155" stroke-width="2"/>
+  <rect x="120" y="40" width="560" height="36" rx="14" fill="#1e293b"/>
+  <rect x="120" y="62" width="560" height="14" fill="#1e293b"/>
+  <circle cx="148" cy="58" r="7" fill="#f87171"/><circle cx="172" cy="58" r="7" fill="#fbbf24"/><circle cx="196" cy="58" r="7" fill="#4ade80"/>
+  <g font-family="Menlo, Consolas, monospace" font-size="20">
+    <text x="145" y="115" fill="#4ade80">~/code <tspan fill="#a78bfa">(main)</tspan> <tspan fill="#e2e8f0">$ rg TODO</tspan></text>
+    <text x="145" y="150" fill="#94a3b8">src/main.py:12: # TODO: ship it</text>
+    <text x="145" y="185" fill="#4ade80">~/code <tspan fill="#a78bfa">(main)</tspan> <tspan fill="#e2e8f0">$ gs</tspan></text>
+    <text x="145" y="220" fill="#94a3b8">nothing to commit, working tree clean</text>
+  </g>
+</svg>

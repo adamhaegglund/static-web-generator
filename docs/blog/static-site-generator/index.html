@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Building a Static Site Generator from Scratch</title>
+    <link href="/static-web-generator/index.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <article><div><h1>Building a Static Site Generator from Scratch</h1><p><a href="/static-web-generator/">< Back Home</a></p><p><img src="/static-web-generator/images/generator.svg" alt="Markdown flowing into HTML"></img></p><blockquote>"What I cannot create, I do not understand."  -- Richard Feynman</blockquote><p>There are dozens of excellent static site generators out there. So naturally, I built my own. Not because the world needed another one, but because I wanted to understand what actually happens between writing a <code>.md</code> file and seeing a page in the browser.</p><p><i>Spoiler: it's mostly string manipulation.</i></p><h2>The Big Picture</h2><p>The whole thing is a pipeline. Markdown goes in one end, HTML comes out the other:</p><ol><li><b>Split into blocks</b>: Break the document on blank lines into paragraphs, headings, lists, quotes and code.</li><li><b>Parse inline text</b>: Find the <b>bold</b>, <i>italic</i>, <code>code</code>, links and images inside each block.</li><li><b>Build a tree</b>: Turn everything into HTML nodes with parents and children.</li><li><b>Render</b>: Walk the tree and spit out a string of HTML.</li><li><b>Template</b>: Drop the result into a page layout and write it to disk.</li></ol><h2>The Tricky Parts</h2><h3>Inline Parsing</h3><p>Delimiters are deceptively simple until they aren't:</p><ul><li><b>Nesting</b>: What happens with bold inside a link inside a list item?</li><li><b>Unclosed delimiters</b>: A stray underscore shouldn't explode the whole page.</li><li><b>Images vs. links</b>: They look almost identical, so order of operations matters.</li></ul><h3>Recursion Everywhere</h3><p>Copying the static directory, generating pages for every nested folder, rendering child nodes. Once recursion clicked, half the project wrote itself.</p><pre><code>def copy_files(src, dest):
+    for name in os.listdir(src):
+        if os.path.isfile(src_path):
+            shutil.copy(src_path, dest_path)
+        else:
+            copy_files(src_path, dest_path)
+</code></pre><h2>Was It Worth It?</h2><p>Absolutely. I'll probably still reach for an off-the-shelf tool for big projects, but now I know what's going on under the hood. And there's something deeply satisfying about publishing a blog with software you wrote yourself.</p></div></article>
+  </body>
+</html>

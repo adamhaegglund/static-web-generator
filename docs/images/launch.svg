@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" role="img" aria-label="Rocket launching from a laptop">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0c0a3e"/><stop offset="1" stop-color="#7c2d12"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="300" fill="url(#sky)"/>
+  <g fill="#ffffff">
+    <circle cx="90" cy="40" r="2"/><circle cx="210" cy="90" r="1.5"/><circle cx="640" cy="50" r="2"/><circle cx="720" cy="120" r="1.5"/><circle cx="520" cy="30" r="1.5"/><circle cx="300" cy="35" r="2"/><circle cx="160" cy="150" r="1.5"/><circle cx="680" cy="190" r="2"/>
+  </g>
+  <rect x="290" y="230" width="220" height="14" rx="4" fill="#94a3b8"/>
+  <rect x="310" y="170" width="180" height="62" rx="6" fill="#334155" stroke="#94a3b8" stroke-width="3"/>
+  <path d="M400 175C385 160 380 140 390 125L410 125C420 140 415 160 400 175Z" fill="#fb923c" opacity="0.9"/>
+  <path d="M400 162C393 152 393 140 397 132L403 132C407 140 407 152 400 162Z" fill="#fde047"/>
+  <path d="M400 30C425 55 428 95 418 125H382C372 95 375 55 400 30Z" fill="#f1f5f9"/>
+  <circle cx="400" cy="75" r="11" fill="#38bdf8" stroke="#475569" stroke-width="3"/>
+  <path d="M382 100L362 128L382 124Z M418 100L438 128L418 124Z" fill="#ef4444"/>
+</svg>
